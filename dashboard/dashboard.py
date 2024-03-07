@@ -107,13 +107,21 @@ class Dashboard:
 
         # Add link button
         def open_link(event):
-            webbrowser.open_new_tab("https://github.com/w3cdpass/Data-driven-Prediction/blob/main/Worldpopulation/answer.ipynb")
+            webbrowser.open_new_tab("https://github.com/w3cdpass/Insurance-Charges-prediction/tree/master")
 
-        link_label = tk.Label(self.dashboard_frame, text="For more detail\nhttps://github.com/w3cdpass/Data-driven-Prediction", fg="black", cursor="hand2")
+        link_label = tk.Label(self.dashboard_frame, text="For source code \nhttps://github.com/w3cdpass/Insurance-Charges-prediction", fg="black", cursor="hand2")
         link_label.grid(row=3, column=0, columnspan=3, padx=0, pady=10)
         link_label.bind("<Button-1>", open_link)
         
-    
+        # Define a function to open the link
+        def open_link2(event):
+            webbrowser.open_new_tab("https://github.com/w3cdpass/Insurance-Charges-prediction/blob/master/mynotebook.ipynb")
+
+        # Create a label for the second link
+        link_label2 = tk.Label(self.dashboard_frame, text="My notebook\nhttps://github.com/w3cdpass/Insurance-Charges-prediction/mynotebook.ipynb", fg="black", cursor="hand2")
+        link_label2.grid(row=4, column=0, columnspan=3, padx=10, pady=10)
+        link_label2.bind("<Button-1>", open_link2)
+
 
     def create_prediction_tab(self):
         # Create a new frame for the prediction interface tab
