@@ -1,6 +1,6 @@
 # Insurance Charges prediction
 
-This model is train on this [dataset]([text](https://github.com/sukhioo7/dataset/blob/main/insurance.csv)). 
+This model is train on this [dataset](https://github.com/sukhioo7/dataset/blob/main/insurance.csv). 
 
 ### Insights 
 ![Image](./dataset/main.png)
