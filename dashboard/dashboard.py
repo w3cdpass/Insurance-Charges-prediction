@@ -21,26 +21,26 @@ class Dashboard:
         self.master.title("Insurance Charges")
         self.master.geometry("1680x850")
         self.master.iconbitmap("./dashboard/asset/ins.ico")
-        self.style = ttk.Style()
-        self.style.theme_create("custom", parent="alt", settings={
-            "TNotebook": {
-                "configure": {
-                    "tabmargins": [0, 0, 0, 0], 
-                    "background": "lightgrey",  # Set background color of notebook page
-                    "borderwidth": 0, 
-                    "highlightthickness": 0, 
-                    "font": ("Arial", 16)
-                },
-            },
-            "TNotebook.Tab": {
-                "configure": {
-                    "padding": [5, 1], 
-                    "background": "lightgray",  # Set background color of tab area
-                    "font": ("Courier", 16)
-                },
-            },
-        })
-        self.style.theme_use("custom")
+        # self.style = ttk.Style()
+        # self.style.theme_create("custom", parent="alt", settings={
+        #     "TNotebook": {
+        #         "configure": {
+        #             "tabmargins": [0, 0, 0, 0], 
+        #             "background": "lightgrey",  # Set background color of notebook page
+        #             "borderwidth": 0, 
+        #             "highlightthickness": 0, 
+        #             "font": ("Arial", 16)
+        #         },
+        #     },
+        #     "TNotebook.Tab": {
+        #         "configure": {
+        #             "padding": [5, 1], 
+        #             "background": "lightgray",  # Set background color of tab area
+        #             "font": ("Courier", 16)
+        #         },
+        #     },
+        # })
+        # self.style.theme_use("custom")
 
         
         self.notebook = ttk.Notebook(self.master)
