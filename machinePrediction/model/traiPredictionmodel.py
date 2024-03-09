@@ -40,5 +40,5 @@ def load_and_train_model(csv_path):
     return model
 
 # Example usage
-bot = load_and_train_model('I:/C/Insurance prediction/dataset/insurance.csv')
+bot = load_and_train_model('./dataset/insurance.csv')
 # print(model)

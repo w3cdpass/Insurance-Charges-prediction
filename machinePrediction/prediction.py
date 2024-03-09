@@ -7,7 +7,7 @@ from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 from machinePrediction.model import traiPredictionmodel
 
 class PredictionInterface:
-    def __init__(self, master, dataset_path='dataset/insurance.csv'):
+    def __init__(self, master, dataset_path=traiPredictionmodel.bot):
         self.dataset_path = dataset_path
         self.master = master
         self.frame = ttk.Frame(self.master)
@@ -90,6 +90,7 @@ class PredictionInterface:
         plt.figure(figsize=(7, 5))
         plt.title("X-Y lines represents Prediction of machine")
         scatter = sns.scatterplot(data=data, x="age", y="charges", hue="smoker", palette="pastel", ax=plt.gca())
+        
         plt.axvline(x=age, color='red', linestyle='dashed', linewidth=0.7)
         plt.axhline(y=predicted_charge, color='red', linestyle='dashed', linewidth=0.7)
 
